@@ -26,6 +26,7 @@ angular.module("myApp")
       data: newUser,
       url: '/api/signup'
     }).success(function() {
+      $state.go('home');
     });
   };
 
